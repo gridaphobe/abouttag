@@ -92,4 +92,5 @@ def normalize(u, preserveFirstComma=False, preserveAlpha=False):
                         normalize_part(u[:cPos]), preserveAlpha)
     else:
         U = normalize_part(u, preserveAlpha)
-    return U.lower().strip()
+    normalized = U.lower().strip() or u
+    return normalized

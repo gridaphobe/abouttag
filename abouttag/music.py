@@ -135,7 +135,8 @@ class TestMusic(about.AboutTestCase):
                '''Strathspey/Miss Lyall's Reel/The St Kilda Wedding''',
                u'The Cast'),
              u'''album:archie campbell marjorie campbell miss lyalls str'''
-              '''athspey miss lyalls reel the st kilda wedding (the cast)''')
+              '''athspey miss lyalls reel the st kilda wedding (the cast)'''),
+            ((u'!!', u'Pylon'), u'album:!! (pylon)')
         )
         for (input, output) in expected:
             title, artists = input[0], input[1:]
